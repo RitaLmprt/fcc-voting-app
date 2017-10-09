@@ -1,0 +1,9 @@
+<h3>{{vm.title}}</h3>
+<a href="/register">Register</a>
+<a href="/login">Login</a>
+<ul>
+    <li ng-repeat="poll in vm.polls">
+       <a href="/poll/{{poll._id}}">
+        {{poll.name}}
+       </a>
+    </li>
